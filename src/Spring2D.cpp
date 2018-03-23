@@ -9,7 +9,7 @@
 
 
 //コンストラクタ
-Spring2D(float _x, float _y, float _mass, float _gravity, float _stiffness, float _damping) {
+Spring2D::Spring2D(float _x, float _y, float _mass, float _gravity, float _stiffness, float _damping) {
     x = _x;
     y = _y;
     mass = _mass;
@@ -18,8 +18,18 @@ Spring2D(float _x, float _y, float _mass, float _gravity, float _stiffness, floa
     damping = _damping;
 }
 
+Spring2D::Spring2D(ofVec2f _pos, float _mass, float _gravity, float _stiffness, float _damping) {
+    //x = _x;
+    //y = _y;
+    pos = _pos;
+    mass = _mass;
+    gravity = _gravity;
+    stiffness = _stiffness;
+    damping = _damping;
+}
+
 //位置を計算
-void update(float targetX, float targetY) {
+void Spring2D::update(float targetX, float targetY) {
     float forceX = (targetX - x) * stiffness;
     float ax = forceX / mass;
     vx = damping * (vx + ax);
@@ -32,7 +42,7 @@ void update(float targetX, float targetY) {
 }
 
 //表示
-void display(float nx, float ny) {
+void Spring2D::display(float nx, float ny) {
     //noStroke();
     //ellipse(x, y, 20, 20);
     //stroke(255);

@@ -5,22 +5,29 @@
 //  Created by Togo Kida on 2018/03/24.
 //
 
-#ifndef Spring2D_hpp
-#define Spring2D_hpp
+#pragma once
+
+//#ifndef Spring2D_hpp//what is this for?
+//#define Spring2D_hpp//what is this for?
 
 #include <stdio.h>
+#include "ofMain.h"
+
 
 class Spring2D {
     float vx, vy;
+    ofVec2f vpos;
     float x, y;
+    ofVec2f pos;//position of the Spring2D
     float gravity;
     float mass;
     float stiffness;
     float damping;
     
-    void Spring2D();
-    void update();
-    void display();
+    Spring2D(float _x, float _y, float _mass, float _gravity, float _stiffness, float _damping);
+    Spring2D(ofVec2f _pos, float _mass, float _gravity, float _stiffness, float _damping);
+    void update(float targetX, float targetY);
+    void display(float nx, float ny);
     
 
     
