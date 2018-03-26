@@ -2,17 +2,17 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    test.setup(0.0, ofGetScreenWidth() / 2, mass, gravity, stiffness, damping);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    test.update(mouseX, mouseY);
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    test.display(mouseX, mouseY);
 }
 
 //--------------------------------------------------------------

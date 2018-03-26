@@ -10,7 +10,7 @@
 
 #pragma once
 
-#include <stdio.h>
+//#include <stdio.h>
 #include "ofMain.h"
 
 class SpringPoint{
@@ -18,7 +18,6 @@ public:
     void setup();
     void update();
     void draw();
-    
     
     ofVec2f pos;//position of the spring point
 };
