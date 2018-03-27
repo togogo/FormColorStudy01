@@ -3,16 +3,19 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     test.setup(0.0, ofGetScreenWidth() / 2, mass, gravity, stiffness, damping);
+    testSpringPoint.setup();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    test.update(mouseX, mouseY);
+    //test.update(mouseX, mouseY);
+    testSpringPoint.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    test.display(mouseX, mouseY);
+    //test.display(mouseX, mouseY);
+    testSpringPoint.draw();
 }
 
 //--------------------------------------------------------------

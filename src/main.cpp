@@ -3,7 +3,13 @@
 
 //========================================================================
 int main( ){
-	ofSetupOpenGL(1000,1000,OF_WINDOW);			// <-------- setup the GL context
+	ofSetupOpenGL(800,800,OF_WINDOW);			// <-------- setup the GL context
+    
+    
+//    float gravity = 0.0;
+//    float mass = 3.0;//test value
+//    float stiffness = 0.2;//test value
+//    float damping = 0.8;//test value
 
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN
