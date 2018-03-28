@@ -2,20 +2,28 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    test.setup(0.0, ofGetScreenWidth() / 2, mass, gravity, stiffness, damping);
-    testSpringPoint.setup();
+    //test.setup(0.0, ofGetScreenWidth() / 2, mass, gravity, stiffness, damping);
+    //testSpringPoint.setup();
+    testSpringCircle.setup(ofVec2f(mouseX, mouseY), rTestSpringCircle, numTestSpringCircle);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     //test.update(mouseX, mouseY);
-    testSpringPoint.update();
+    //testSpringPoint.update(ofVec2f(ofGetMouseX(), ofGetMouseY()));
+    testSpringCircle.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    //update();
     //test.display(mouseX, mouseY);
-    testSpringPoint.draw();
+    //testSpringCircle.update();
+    //testSpringPoint.draw();
+    
+    testSpringCircle.draw();
+    
+    
 }
 
 //--------------------------------------------------------------

@@ -2,7 +2,7 @@
 //  springPoint.hpp
 //  form_color_study01
 //
-//  Created by Togo Kida on 2018/03/24.
+//  Created by Togo Kida
 //
 
 #pragma once
@@ -14,10 +14,12 @@
 class SpringPoint{
 public:
     void setup();
-    void update();
+    //void update();//depricated
+    void update(ofVec2f _pos);//set position of the SpringPoint
     void draw();
+    void setPos(ofVec2f _pos);//set position of the SpringPoint
     
-    ofVec2f pos;//position of the spring point
+    ofVec2f pos;//position of the SpringPoint
     
     Spring2D base;
     Spring2D extend;

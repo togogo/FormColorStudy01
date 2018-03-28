@@ -2,7 +2,7 @@
 //  Spring2D.cpp
 //  form_color_study01
 //
-//  Created by Togo Kida on 2018/03/24.
+//  Created by Togo Kida
 //
 
 #include "Spring2D.hpp"

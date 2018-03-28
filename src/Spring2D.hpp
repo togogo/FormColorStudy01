@@ -2,7 +2,7 @@
 //  Spring2D.hpp
 //  form_color_study01
 //
-//  Created by Togo Kida on 2018/03/24.
+//  Created by Togo Kida
 //
 
 #pragma once
@@ -32,7 +32,7 @@ public:
     void setDamping(float _damp);
     void setStiffness(float _stiff);
     
-    void setColorScheme(ofColor _fill, ofColor _stroke);
+    void setColorScheme(ofColor _fill, ofColor _stroke);//change the color scheme
     
     
     

@@ -4,6 +4,7 @@
 #include "SpringPoint.hpp"
 //#include "SpringPoint.cpp"
 #include "Spring2D.hpp"
+#include "SpringCircle.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -24,15 +25,19 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        Spring2D test;//test spring
-        //float gravity = 10.0;//test value
+        Spring2D test;//test Spring2D
+        SpringPoint testSpringPoint;//test SpringPoint
+        SpringCircle testSpringCircle;//test SpringCircle
+        int numTestSpringCircle = 10;//test number of SpringPoints in SpringCircle
+        float rTestSpringCircle = 200;//test radius of SpringCircle
     
+        //float gravity = 10.0;//test value
         float gravity = 0.0;
         float mass = 3.0;//test value
         float stiffness = 0.2;//test value
         float damping = 0.8;//test value
     
-        SpringPoint testSpringPoint;//test spring point
+    
     
 		
 };
