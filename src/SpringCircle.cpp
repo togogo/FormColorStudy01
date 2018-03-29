@@ -57,11 +57,31 @@ void SpringCircle::draw(){
 }
 
 void SpringCircle::drawSurface(){
+    
+    //third layer
     ofSetColor(100, 200, 100);//temporary color
     ofBeginShape();
     for(int i = 0; i<sp.size(); i++){
-
+        
         ofVertex(sp[i].third.x, sp[i].third.y);//drawing the "third" SpringPoints
+    }
+    ofEndShape();
+    
+    //second layer
+    ofSetColor(200, 100, 200);//temporary color
+    ofBeginShape();
+    for(int i = 0; i<sp.size(); i++){
+        
+        ofVertex(sp[i].second.x, sp[i].second.y);//drawing the "second" SpringPoints
+    }
+    ofEndShape();
+    
+    //first layer
+    ofSetColor(200, 200, 100);//temporary color
+    ofBeginShape();
+    for(int i = 0; i<sp.size(); i++){
+
+        ofVertex(sp[i].first.x, sp[i].first.y);//drawing the "first" SpringPoints
     }
     ofEndShape();
 }
