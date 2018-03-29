@@ -2,6 +2,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    ofBackground(255,70,230);
+    ofHideCursor();
     //test.setup(0.0, ofGetScreenWidth() / 2, mass, gravity, stiffness, damping);
     //testSpringPoint.setup();
     testSpringCircle.setup(ofVec2f(mouseX, mouseY), rTestSpringCircle, numTestSpringCircle);
@@ -21,8 +23,11 @@ void ofApp::draw(){
     //testSpringCircle.update();
     //testSpringPoint.draw();
     
-    testSpringCircle.draw();
+    //testSpringCircle.draw();
+    testSpringCircle.drawSurface();
     
+    
+
     
 }
 

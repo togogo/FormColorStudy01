@@ -24,5 +24,6 @@ public:
     void setCircle();
     void update();
     void draw();
+    void drawSurface();//draws as one unified form
     
 };

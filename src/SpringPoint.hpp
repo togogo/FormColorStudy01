@@ -21,12 +21,14 @@ public:
     
     ofVec2f pos;//position of the SpringPoint
     
-    Spring2D base;
-    Spring2D extend;
+    Spring2D first;
+    Spring2D second;
+    Spring2D third;
     
     //just using this temporarily...
-    float gravity = 0.0;//test value
-    float mass = 3.0;//test value
-    float stiffness = 0.2;//test value
-    float damping = 0.8;//test value
+    float gravity;// = 0.0;//test value
+    float mass;// = 3.0;//test value
+    float stiffness;// = 0.2;//test value
+    float damping;// = 0.8;//test value
+    
 };
