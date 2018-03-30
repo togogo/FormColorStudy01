@@ -28,7 +28,7 @@ class ofApp : public ofBaseApp{
         Spring2D test;//test Spring2D
         SpringPoint testSpringPoint;//test SpringPoint
         SpringCircle testSpringCircle;//test SpringCircle
-        int numTestSpringCircle = 1000;//test number of SpringPoints in SpringCircle
+        int numTestSpringCircle = 100;//test number of SpringPoints in SpringCircle
         float rTestSpringCircle = 200;//test radius of SpringCircle
     
         //float gravity = 10.0;//test value

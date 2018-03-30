@@ -58,8 +58,13 @@ void SpringCircle::draw(){
 
 void SpringCircle::drawSurface(){
     
+    //ofEnableBlendMode(OF_BLENDMODE_ALPHA);
+    //ofEnableBlendMode(OF_BLENDMODE_ADD);
+    ofEnableBlendMode(OF_BLENDMODE_MULTIPLY);
+    
     //third layer
-    ofSetColor(100, 200, 100);//temporary color
+    //ofSetColor(100, 200, 100);//temporary color
+    ofSetColor(0, 160, 233);//temporary color, cyan
     ofBeginShape();
     for(int i = 0; i<sp.size(); i++){
         
@@ -68,7 +73,8 @@ void SpringCircle::drawSurface(){
     ofEndShape();
     
     //second layer
-    ofSetColor(200, 100, 200);//temporary color
+    //ofSetColor(200, 100, 200);//temporary color
+    ofSetColor(228, 0, 127);//temporary color, magenta
     ofBeginShape();
     for(int i = 0; i<sp.size(); i++){
         
@@ -77,7 +83,8 @@ void SpringCircle::drawSurface(){
     ofEndShape();
     
     //first layer
-    ofSetColor(200, 200, 100);//temporary color
+    //ofSetColor(200, 200, 100);//temporary color
+    ofSetColor(255, 241, 0);//temporary color, yellow
     ofBeginShape();
     for(int i = 0; i<sp.size(); i++){
 

@@ -2,7 +2,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofBackground(255,70,230);
+    //ofBackground(255,70,230);
+    ofBackground(255, 255, 255);
     ofHideCursor();
     //test.setup(0.0, ofGetScreenWidth() / 2, mass, gravity, stiffness, damping);
     //testSpringPoint.setup();
